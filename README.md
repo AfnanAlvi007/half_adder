@@ -51,7 +51,8 @@ python3 verify_results.py
 
 
 ## Project Structure
-half_adder/
+half_adder
+
 ├── half_adder.mag (layout design)
 ├── half_adder.ext (extracted netlist)
 ├── half_adder_clean.spice (SPICE netlist)
