@@ -1,0 +1,28 @@
+* SPICE3 file created from half_adder.ext - technology: scmos
+
+.option scale=1u
+
+M1000 vcarry vbb va w_n135_0# pfet w=16 l=3
++  ad=0.256n pd=64u as=0.192n ps=56u
+M1001 vsum vb vab Gnd nfet w=16 l=3
++  ad=0.24n pd=62u as=0.208n ps=58u
+M1002 vbb vb vdd w_n135_0# pfet w=16 l=3
++  ad=0.224n pd=60u as=0.224n ps=60u
+M1003 vab va vdd w_n135_0# pfet w=16 l=3
++  ad=0.224n pd=60u as=0.224n ps=60u
+M1004 vcarry vb va Gnd nfet w=16 l=3
++  ad=0.272n pd=66u as=0.176n ps=54u
+M1005 vcarry vb gnd w_n135_0# pfet w=16 l=3
++  ad=0.24n pd=62u as=0.208n ps=58u
+M1006 vbb vb gnd Gnd nfet w=16 l=3
++  ad=0.224n pd=60u as=0.224n ps=60u
+M1007 vsum vbb vab w_n135_0# pfet w=16 l=3
++  ad=0.256n pd=64u as=0.192n ps=56u
+M1008 vcarry vbb gnd Gnd nfet w=17 l=3
++  ad=0.34n pd=74u as=0.136n ps=50u
+M1009 vsum vb va w_n135_0# pfet w=16 l=3
++  ad=0.256n pd=64u as=0.192n ps=56u
+M1010 vsum vbb va Gnd nfet w=16 l=3
++  ad=0.368n pd=78u as=0.112n ps=46u
+M1011 vab va gnd Gnd nfet w=16 l=3
++  ad=0.224n pd=60u as=0.224n ps=60u

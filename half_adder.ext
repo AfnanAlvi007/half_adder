@@ -1,0 +1,46 @@
+timestamp 1790371302
+version 8.3
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "vab" 511 22419 28 -28 ndiff 432 118 416 116 0 0 0 0 0 0 0 0 707 344 0 0 0 0
+node "vsum" 505 14335 0 -28 ndiff 608 140 512 128 0 0 0 0 0 0 0 0 585 244 0 0 0 0
+node "va" 2476 74116 -91 -28 ndiff 288 100 384 112 749 500 0 0 0 0 0 0 690 296 0 0 0 0
+node "vcarry" 504 15745 -121 -29 ndiff 612 140 496 126 0 0 0 0 0 0 0 0 645 268 0 0 0 0
+node "gnd" 1075 66035 -132 -29 ndiff 584 170 308 138 0 0 0 0 0 0 0 0 1830 742 0 0 0 0
+node "vb" 2855 75158 -119 -10 p 0 0 0 0 1077 724 0 0 0 0 0 0 0 0 0 0 0 0
+node "vbb" 3511 108105 -147 -34 p 224 60 224 60 1281 862 0 0 0 0 0 0 331 146 0 0 0 0
+node "vdd" 506 33840 -50 1 pdiff 50 40 448 120 0 0 0 0 0 0 0 0 860 354 0 0 0 0
+node "w_n135_0#" 30626 0 -135 0 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4799 524
+cap "gnd" "vbb" 450
+cap "vcarry" "w_n135_0#" 1880
+cap "va" "gnd" 900
+cap "gnd" "w_n135_0#" 235
+cap "vcarry" "vb" 900
+cap "va" "vbb" 450
+cap "va" "vab" 450
+cap "vsum" "vbb" 450
+cap "w_n135_0#" "vab" 470
+cap "w_n135_0#" "vbb" 3941
+cap "vb" "vab" 900
+cap "vb" "vbb" 450
+cap "va" "w_n135_0#" 1526
+cap "vdd" "w_n135_0#" 1410
+cap "vsum" "w_n135_0#" 1880
+cap "va" "vb" 900
+cap "vcarry" "vbb" 900
+cap "vsum" "vb" 450
+cap "w_n135_0#" "vb" 1053
+device mosfet nfet 81 -28 82 -27 3 16 "Gnd!" "va" 6 0 "gnd" 16 224,60 "vab" 16 224,60
+device mosfet nfet 41 -28 42 -27 3 16 "Gnd!" "vb" 6 0 "vab" 16 208,58 "vsum" 16 240,62
+device mosfet nfet -3 -28 -2 -27 3 16 "Gnd!" "vbb" 6 0 "va" 16 112,46 "vsum" 16 368,78
+device mosfet nfet -36 -28 -35 -27 3 16 "Gnd!" "vb" 6 0 "gnd" 16 224,60 "vbb" 16 224,60
+device mosfet nfet -80 -28 -79 -27 3 16 "Gnd!" "vb" 6 0 "va" 16 176,54 "vcarry" 16 272,66
+device mosfet nfet -124 -29 -123 -28 3 17 "Gnd!" "vbb" 6 0 "gnd" 17 136,50 "vcarry" 17 340,74
+device mosfet pfet 81 1 82 2 3 16 "w_n135_0#" "va" 6 0 "vdd" 16 224,60 "vab" 16 224,60
+device mosfet pfet 40 1 41 2 3 16 "w_n135_0#" "vbb" 6 0 "vab" 16 192,56 "vsum" 16 256,64
+device mosfet pfet 2 1 3 2 3 16 "w_n135_0#" "vb" 6 0 "va" 16 192,56 "vsum" 16 256,64
+device mosfet pfet -36 1 -35 2 3 16 "w_n135_0#" "vb" 6 0 "vdd" 16 224,60 "vbb" 16 224,60
+device mosfet pfet -79 1 -78 2 3 16 "w_n135_0#" "vbb" 6 0 "va" 16 192,56 "vcarry" 16 256,64
+device mosfet pfet -119 1 -118 2 3 16 "w_n135_0#" "vb" 6 0 "gnd" 16 208,58 "vcarry" 16 240,62

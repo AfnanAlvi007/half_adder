@@ -1,0 +1,27 @@
+Half Adder Simulation - FIXED
+
+.model nfet nmos (level=1 vto=0.7 kp=20u)
+.model pfet pmos (level=1 vto=-0.7 kp=10u)
+
+.include half_adder_clean.spice
+
+* Power supply
+VDD vdd gnd DC 5
+
+* INPUT NODES ARE va AND vb (NOT a AND b!)
+Vva va gnd PULSE(0 5 0 1n 1n 5n 10n)
+Vvb vb gnd PULSE(0 5 0 1n 1n 10n 20n)
+
+* Transient analysis
+.tran 1n 100n
+
+.control
+run
+set wr_singlescale
+set wr_vecnames
+option numdgt=6
+wrdata half_adder_results_fixed.txt v(va) v(vb) v(vsum) v(vcarry)
+quit
+.endc
+
+.end
